@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Autentikasi 2 Menit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HALAMAN LOGIN -->
+    <main id="layar-login" class="kartu-utama">
+        <h1>Masuk ke Sistem</h1>
+        <p>Sesi Anda akan dibatasi maksimal 2 menit setelah login berhasil.</p>
+        <form id="form-login">
+            <div class="grup-input">
+                <label for="username">Nama Pengguna:</label>
+                <input type="text" id="username" required placeholder="Masukkan nama...">
+            </div>
+            <div class="grup-input">
+                <label for="password">Kata Sandi:</label>
+                <input type="password" id="password" required placeholder="Masukkan sandi...">
+            </div>
+            <button type="submit" class="tombol-utama">Login</button>
+        </form>
+    </main>
+
+    <!-- HALAMAN DASHBOARD (Disembunyikan secara default menggunakan CSS) -->
+    <main id="layar-dashboard" class="kartu-utama sembunyi">
+        <h1>Dashboard Rahasia</h1>
+        <p>Selamat datang, <strong id="teks-pengguna">Pengguna</strong>! Anda berhasil memuat "Save Data" sesi Anda.</p>
+        
+        <div class="kartu-info">
+            <h2>Sisa Waktu Sesi:</h2>
+            <div id="waktu-mundur" class="teks-waktu">02:00</div>
+            <p>Jika waktu habis, sistem akan memaksa Anda keluar.</p>
+        </div>
+
+        <button id="tombol-logout" class="tombol-bahaya">Logout Sekarang</button>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

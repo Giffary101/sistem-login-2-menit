@@ -1,0 +1,112 @@
+:root {
+    --warna-primer: #2c3e50;
+    --warna-sekunder: #3498db;
+    --warna-bahaya: #e74c3c;
+    --warna-latar: #ecf0f1;
+    --warna-teks: #333333;
+    --radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--warna-latar);
+    color: var(--warna-teks);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.kartu-utama {
+    background-color: white;
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* KELAS UTILITAS: Digunakan oleh JS untuk mematikan/menyalakan tampilan halaman */
+.sembunyi {
+    display: none !important;
+}
+
+h1 {
+    color: var(--warna-primer);
+    margin-bottom: 10px;
+}
+
+p {
+    color: #7f8c8d;
+    margin-bottom: 25px;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.grup-input {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.grup-input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--warna-primer);
+}
+
+.grup-input input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: var(--radius);
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.tombol-utama {
+    background-color: var(--warna-sekunder);
+}
+
+.tombol-bahaya {
+    background-color: var(--warna-bahaya);
+    margin-top: 20px;
+}
+
+.kartu-info {
+    background-color: var(--warna-latar);
+    padding: 20px;
+    border-radius: var(--radius);
+    margin: 20px 0;
+    border: 1px dashed #bdc3c7;
+}
+
+.teks-waktu {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--warna-bahaya);
+    margin: 10px 0;
+    font-family: monospace;
+}
